@@ -34,13 +34,16 @@ In order to find a path call `graph.getPath(3,5)` where 3 and 5 are vertices val
     TODO: At the moment a simplified version of negative cycle detection is used
 
 `Graph.hasCycles()` returns true if the given graph contains a cycle.
+
 `Graph.transform()` allows transforming every Vertices' value according to the user-defined function
 
 ## Thread Safety.
 We assume that there are multiple readers and a very few writers so
 `ReentrantReadWriteLock` is used to provide fast reading and some level of consistency.
+
 if the graph or its vertices are being changed (see `AbstractGraph` class) or new edges/vertices are being added.
 `Edge` - is an immutable class
+
 `Vertex` - can be changed from the inside of the package. The value of Vertex could be immutable class so 'volatile' wouldn't be enough.
 
 See the Graph interface for more methods and tests for more information on usage.
