@@ -41,9 +41,7 @@ In order to find a path call `graph.getPath(3,5)` where 3 and 5 are vertices val
 
 ## Thread Safety.
 We assume that there are multiple readers and a very few writers so
-`ReentrantReadWriteLock` is used to provide fast reading along with some level of consistency.
-
-if the graph or its vertices are being changed (see `AbstractGraph` class) or new edges/vertices are being added.
+`ReentrantReadWriteLock`  (see `AbstractGraph` class) is used to provide fast reading along with some level of consistency in the case when the graph or its vertices are being changed.
 
 `Edge` - is an immutable class
 
