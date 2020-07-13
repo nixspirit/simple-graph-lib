@@ -26,11 +26,11 @@ Gradle Lombok plugin was used to avoid writing boilerplate code.
 A new vertex could be added as follows:
     `graph.addVertex(1)`
 
-Depending on a graph type a new edge could be added either via graph.addEdge(1, 2) or graph.addEdge(1, 2, weight)
+Depending on a graph type a new edge could be added either via `graph.addEdge(1, 2)` or `graph.addEdge(1, 2, weight)`
 
 In order to find a path call `graph.getPath(3,5)` where 3 and 5 are vertices values. It will return a collection of edges which lie on the path.
-* a) For Unweighted graphs the simple DFS traverse is used to perform searching, see SimplePathFindingStrategy
-* b) For Weighted graphs a simplified implementation of Bellman–Ford algorithm is used, see BellmanFordPathFindingInWeightedGraphStrategy
+* a) For Unweighted graphs the simple DFS traverse is used to perform searching, see `SimplePathFindingStrategy`
+* b) For Weighted graphs a simplified implementation of Bellman–Ford algorithm is used, see `BellmanFordPathFindingInWeightedGraphStrategy`
     TODO: At the moment a simplified version of negative cycle detection is used
 
 `Graph.hasCycles()` returns true if the given graph contains a cycle.
