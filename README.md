@@ -42,6 +42,7 @@ We assume that there are multiple readers and a very few writers so
 `ReentrantReadWriteLock` is used to provide fast reading and some level of consistency.
 
 if the graph or its vertices are being changed (see `AbstractGraph` class) or new edges/vertices are being added.
+
 `Edge` - is an immutable class
 
 `Vertex` - can be changed from the inside of the package. The value of Vertex could be immutable class so 'volatile' wouldn't be enough.
