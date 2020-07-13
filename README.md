@@ -1,6 +1,7 @@
 # simple-graph-lib
 All the classes intentionally are placed under the same package to hide the implementation from the user.
-The user could use only the methods fined via the Graph interface plus Edge, WeightedEdge and Vertex classes.
+
+The user could use only the methods defined in the Graph interface plus the Edge, WeightedEdge and Vertex classes.
 
 Gradle Lombok plugin was used to avoid writing boilerplate code.
 
