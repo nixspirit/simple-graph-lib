@@ -45,6 +45,6 @@ We assume that there are multiple readers and a very few writers so
 
 `Edge` - is an immutable class
 
-`Vertex` - cannot be changed from the inside of the package. The value of Vertex could be immutable class so 'volatile' wouldn't be enough.
+`Vertex` - can be changed from the inside of the package only. The value of Vertex could be immutable class so 'volatile' wouldn't be enough.
 
 See the Graph interface for more methods and tests for more information on usage.
